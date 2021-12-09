@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <gtk/gtk.h>
 
+//creacion de las funciones de juego
 
 gboolean onPressEvent(GtkButton *btn, GdkEventButton *event, gpointer data){
   if(event->button == 1) return FALSE;
@@ -79,7 +80,7 @@ void comprobar_victoria(GtkWidget *widget, gpointer data){
 
 }
 
-
+//Definicion nombres de las los botones/acciones junto a la matriz
 
 int main(int argc, char* argv[])  {
 
@@ -112,6 +113,7 @@ int main(int argc, char* argv[])  {
   GtkWidget *set_9;
   int matriz[] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
 
+//Creacion de botones
 
   gtk_init(&argc, &argv);
 
@@ -199,6 +201,8 @@ int main(int argc, char* argv[])  {
     gtk_builder_get_object(builder, "set_9")
   );
 
+//definion de acciones 
+
   g_signal_connect(button_1, "clicked", G_CALLBACK(on_clicked_1), window2);
   g_signal_connect(button_2, "clicked", G_CALLBACK(gtk_main_quit), NULL);
   g_signal_connect(restart, "clicked", G_CALLBACK(restart_1), set_1);
@@ -239,7 +243,7 @@ int main(int argc, char* argv[])  {
   g_signal_connect(gato_9, "button-press-event", G_CALLBACK(onPressEvent), set_9);
   g_signal_connect(gato_9, "clicked", G_CALLBACK(set_gato_1), matriz);
 
-
+//final del programa
 
   gtk_widget_show_all(window);
 
