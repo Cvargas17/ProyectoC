@@ -2,12 +2,12 @@
 
 Ejecuta el juego de gato para un partida Local usando el mouse y click derecho y click izquierdo para jugador 1 y jugador 2
 
-# instalacion
+# Instalación
 
-Primero, ya sea instalar o verificacion de la instalcion de la ibreria de GTK y Glade, antes de Ejecutar el codigo
+Primero, ya sea instalar o verificación de la instalcion de la librería de GTK y Glade, antes de Ejecutar el código
 
-Tambien comprobar que la carpeta de imagenes esten en la misma carpeta que el codigo, el template y el makefile
+También comprobar que las imagenes esten en la misma carpeta que el código, el template y el makefile
 
 # Uso
 
-Compilar el codigo, y despues ejetutar el mismo
+Compilar el código, y despues ejecutar el mismo
