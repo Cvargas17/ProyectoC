@@ -9,5 +9,3 @@ Primero, ya sea instalar o verificacion de la instalcion de la ibreria de GTK y 
 # Uso
 
 Complicar el codigo, y despues ejetutar el mismo
-
-
